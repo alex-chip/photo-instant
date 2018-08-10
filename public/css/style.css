@@ -566,13 +566,13 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); }
   .Features .Feature-containerImg:nth-child(1) {
-    background: url("../img/03.jpg") center/cover no-repeat; }
+    background: url("../img/03.jpg") top/cover no-repeat; }
   .Features .Feature-containerImg:nth-child(2) {
     background: url("../img/04.jpg") center/cover no-repeat; }
   .Features .Feature-containerImg:nth-child(3) {
     background: url("../img/05.jpg") center/cover no-repeat; }
   .Features .Feature-containerImg:nth-child(4) {
-    background: url("../img/06.jpg") center/cover no-repeat; }
+    background: url("../img/06.jpg") bottom/cover no-repeat; }
 
 .Features .Feature-title {
   margin: 0;
