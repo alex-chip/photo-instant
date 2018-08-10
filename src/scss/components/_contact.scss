@@ -1,0 +1,68 @@
+.Contact {
+    padding: 3em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-container {
+        width: 80%;
+
+        @media screen and (min-width: $bp-m) {
+            width: 50%;
+        }
+    }
+
+    &-title {
+        text-transform: uppercase;
+        letter-spacing: 7px;
+        text-align: center;
+        font-weight: lighter;
+        padding-top: 1.2em;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 30%;
+            height: 2px;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%);
+            background-color: $secondary-color;
+            @media screen and (min-width: $bp-l) {
+                width: 20%;
+            }
+        }
+
+    }
+
+    &-input {
+
+        &Name,
+        &Email,
+        &Subject,
+        &Message {
+            width: 100%;
+            display: block;
+            text-align: center;
+            padding: 1.2em 0 .3em 0;
+            background: $primary-color;
+            color: #FFF;
+            border: none;
+            border-bottom: 1px solid darken($secondary-color, 15);
+            line-height: 1.5;
+        }
+
+        &Message {
+            resize: none;
+            margin-bottom: 1em;
+        }
+
+        &Submit {
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: .8em;
+        }
+    }
+}

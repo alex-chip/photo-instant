@@ -604,3 +604,91 @@ body {
   .Features .Feature-title span {
     display: block;
     width: 100%; }
+
+.Contact {
+  padding: 3em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .Contact-container {
+    width: 80%; }
+    @media screen and (min-width: 640px) {
+      .Contact-container {
+        width: 50%; } }
+  .Contact-title {
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    text-align: center;
+    font-weight: lighter;
+    padding-top: 1.2em;
+    position: relative; }
+    .Contact-title:before {
+      content: "";
+      position: absolute;
+      width: 30%;
+      height: 2px;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%);
+      background-color: #e6bf00; }
+      @media screen and (min-width: 1024px) {
+        .Contact-title:before {
+          width: 20%; } }
+  .Contact-inputName, .Contact-inputEmail, .Contact-inputSubject, .Contact-inputMessage {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 1.2em 0 .3em 0;
+    background: #333;
+    color: #FFF;
+    border: none;
+    border-bottom: 1px solid #998000;
+    line-height: 1.5; }
+  .Contact-inputMessage {
+    resize: none;
+    margin-bottom: 1em; }
+  .Contact-inputSubmit {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .8em; }
+
+.Footer {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background: url("../img/07.jpg") center/cover no-repeat;
+  position: relative; }
+  .Footer:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); }
+  .Footer-title {
+    margin: 0;
+    color: #e6bf00;
+    text-transform: uppercase;
+    font-size: .8em;
+    position: relative;
+    z-index: 50; }
+  .Footer-containerLogo {
+    width: 30%;
+    padding-left: 1em; }
+  .Footer-containerSociales {
+    width: 70%; }
+  .Footer-socialesList {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding-left: 0;
+    padding-right: 1em;
+    margin-top: 0;
+    margin-bottom: 0; }
+    .Footer-socialesListLink {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 0 .5em;
+      position: relative;
+      z-index: 50; }
