@@ -49,6 +49,7 @@
             transition: all .4s;
             background-color: rgba($primary-color, .6);
             z-index: 2000;
+            overflow: auto;
 
             &.is-active {
                 top: 40px;
@@ -66,7 +67,7 @@
         padding-left: 0;
         margin-top: 0;
         margin-bottom: 0;
-        line-height: 3.2;
+        line-height: 4;
         height: 80vh;
         width: 90vw;
 
