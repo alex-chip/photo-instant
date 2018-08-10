@@ -1,0 +1,118 @@
+.Navigation {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    padding: 0 $gutter;
+}
+
+.Logo {
+    width: 35%;
+
+    &-title {
+        margin: 0;
+        text-transform: uppercase;
+        color: $secondary-color;
+        font-weight: lighter;
+        font-size: .9em;
+    }
+}
+
+.Menu {
+    width: 65%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+    &-toggle {
+        cursor: pointer;
+
+        @media screen and (min-width: $bp-l) {
+            display: none;
+        }
+
+        &:before {
+            margin-right: .3em;
+        }
+    }
+
+    &-nav {
+        @media screen and (max-width: $bp-l) {
+            position: absolute;
+            right: 0;
+            top: -100vh;
+            transition: all .3s;
+            background-color: rgba($primary-color, .6);
+            z-index: 2000;
+
+            &.is-active {
+                top: 41px;
+            }
+        }
+
+        @media screen and (min-width: $bp-l) {
+            width: 100%;
+            right: 0;
+        }
+    }
+
+    &-list {
+        list-style: none;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 4;
+        width: 90vw;
+
+        @media screen and (min-width: $bp-l) {
+            display: flex;
+            height: 60px;
+            right: 0;
+            width: 100%;
+        }
+
+
+        &Item {
+            border-bottom: 1px solid rgba(#FFF, .4);
+            transition: all .3s;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+
+            &:hover {
+                background-color: rgba($secondary-color, .4);
+                border-color: rgba($secondary-color, .4);
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            @media screen and (min-width: $bp-l) {
+                border-bottom: none;
+                border-left: 1px solid rgba(#FFF, .4);
+
+                &:first-child {
+                    border-left: none;
+                }
+            }
+        }
+
+        &Link {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            transition: all .3s;
+            cursor: pointer;
+            padding-left: $gutter;
+
+            &:hover {
+                color: $primary-color;
+                color: #fff;
+            }
+
+            @media screen and (min-width: $bp-l) {
+                text-align: center;
+            }
+        }
+    }
+}

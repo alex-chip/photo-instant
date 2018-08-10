@@ -1,0 +1,45 @@
+.Banner {
+    background: url('../img/01.jpg') center / cover no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000, .4);
+    }
+
+    &-copy {
+        position: relative;
+        z-index: 50;
+        border-top: 2px solid $secondary-color;
+        border-bottom: 2px solid $secondary-color;
+        width: 50%;
+        padding: 2em 0;
+        text-align: center;
+
+        @media screen and (min-width: $bp-l ) {
+            padding: 3em 0;
+        }
+
+        &Title,
+        &Description {
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: lighter;
+        }
+
+        &Title {
+            margin-bottom: .3em ;
+        }
+
+        &Description {
+            font-size: .8em;
+        }
+    }
+}
